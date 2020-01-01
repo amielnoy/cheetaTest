@@ -83,6 +83,8 @@ test{
         logger.lifecycle("Running test: " + descriptor)
     }
 
+
+
     // Fail the 'test' task on the first test failure
     //failFast = true
 
