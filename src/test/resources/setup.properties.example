@@ -1,0 +1,23 @@
+host = www.flickr.com
+apiKey=38e8f1f81442eba74b038c854f03d52d
+email = allancaplan
+username = I_am_Allan
+displayname = I_am_Allan
+nsid = 84454580@N00
+groupid = 34427469792@N01 # Flickr Central group, no need to change this
+testgroupid = (a group that you created)
+photoid = 1088148233
+photosetid = 122485
+collectionid = (taken from a call to http://www.flickr.com/services/api/flickr.collections.getTree.htm)
+collectionurlid = (taken from the id in the collection URL)
+imagefile = D:/pictureToUpload/1.jpg
+secret = b161ae7cb885a851
+token = 72157712460982692-f4f7bc43d5aa2e4e
+tokensecret = a1de85ea83124ef9
+galleryid = 72157629277637049
+photosetphotos = (comma separated list of ids of at least 3 photos that you own)
+
+# id of a photo in your stream
+# which the tests can use to set, get and remove geo data
+# existing geo data will be destroyed!
+geo.write.photoid = 1088148233

@@ -1,0 +1,68 @@
+TEST PLAN(STD):
+Sanity
+    (A).One user,
+     Check that one user :
+              can  create updated upload report to flicker site(implemented**** as automation****)
+              can  create  the recent photos details           (implemented**** as automation****)
+              can  create get the user uload status            (implemented**** as automation****)
+              can  create echo of the api_key,auth_token,and api_sig(implemented**** as automation****)
+              can  create updated upload report to flicker site(implemented**** as automation****)
+              uses the correct time frame                      (implemented**** as automation****)
+
+              can  create new upload  of one image tiff/jpeg to valid url.
+              can  create new upload  of one avi/mp4 video to valid url.
+              can  create new upload  of one avi/mp4 video and one tiff/jpeg image to valid url.
+              can  create new upload  of 3 avi/mp4 video and 3 tiff/jpeg images to valid url.
+              can  create new share of one image tiff/jpeg on valid url.
+              can't update share image on invalid url.
+              can't Delete update image on invalid url.
+
+              can't create new share/upload of image/video on invalid url.
+              can't update share/upload of image /video on invalid url
+              can't Delete share/upload image /video on invalid url.
+
+              can't upload one image /video to invalid url( NEGATIVE ).
+              can't share one image/video on invalid url( NEGATIVE).
+              *one user is logedd in to his acount.
+               This user is authorised only to his permited set of operations(only update,only create,only delete,only create and update share of videos/images collection and etc
+
+               change your default privacy settings.
+               change your default privacy settings than change it back.
+.
+              usability testing for one user.
+              a common non power user tries to create a simple and basic share/upload and does it with no assistance of support or any other help.
+              a common non power user tries to create any of the above scenarios of the one user.  with no assistance of support.  or any other help
+              a common non power user tries to create any of the above scenarios of the one user.  only with the support of flicker web site.
+              a common non power user tries to create any of the above scenarios of the one user.  only with the support of one support person.
+               a common non power user tries to create any of the above scenarios of the one user.  with support of site and than with the support of one support person.
+    (B)Two users
+              The same as for one user.
+              one user create share/upload than the other deletes the share/upload.
+              one user update share/upload delete the share/upload.
+              *one user is loges in to his account.
+               This user is authorized only to his permitted set of operations(only update,only create,only delete,only create and update and etc )
+               the other user is authenticated and authorized to access only his specific set of operations.
+     (C)Ten users
+              The same as for one & two users.
+               Group of 5 X 2 users, Create uploads/shares.
+                Group of  5 X 2 users, Change uploads/shares.
+               5 users create share/upload 3 other user change it's properties &  2 others delete it.
+               5 users change it's properties & 5 others delete it.
+               3 users create upload/share  4 users change it's properties &  3 delete it 8/10 photos.
+
+(D)One Hundred users(JEMETER using predifined scripts)
+                Group of 10 vusers  serially each in with all scenarios of ten users
+                50 users start creating upload/share than 50 other users delete the uploads/shares .
+                (*)Verify no bottle necks appear in servers/virtual servers/docker containers,
+                    Memory/cpu/incoming/out going network/disk usage percentage
+                50 users start creating upload/share than 50 other users update the uploads/shares verify (*).
+                Group of 100 vusers simultansly   doing all the scenarios of one user , 2 users and 10 users
+                verify (*)
+(E)1000 users(BLAZE METER using predifined scripts)
+                Group of 10 vusers  serially each in with all scenarios of ten users
+                50 users start creating upload/share than 50 other users delete the uploads/shares .
+                (*)Verify no bottle necks appear in servers/virtual servers/docker containers,
+                    Memory/cpu/incoming/out going network/disk usage percentage
+                50 users start creating upload/share than 50 other users update the uploads/shares verify (*).
+                Group of 100 vusers simultansly   doing all the scenarios of one user , 2 users and 10 users
+                verify (*)

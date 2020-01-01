@@ -1,0 +1,17 @@
+Devops Plan:
+build 2 to 5 docker containers each running an independent set of tests
+for providing parralel run enviornment
+
+Using jenkins & Teraform code
+Use Jenkins job1
+  use teraform to build each docker os layers & instalations
+Use Jenkins Job2
+   git pull of last automation code version
+Use Jenkind Job3
+  invoke the dockers for them to be ready to start the testing
+Use Jenkins Job4
+  invoke all the test sets on all the dockers one after the other/or in parralel
+   so they will run in parralel
+ each docker will have an independant allure paramatrized job to configure and report
+ the test run.
+

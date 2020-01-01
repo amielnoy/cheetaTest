@@ -1,0 +1,14 @@
+.idea
+target
+.gradle
+build/
+out/
+src/examples/resources/setup.properties
+src/test/resources/setup.properties
+Flickr4Java.iml
+Flickr4Java.ipr
+Flickr4Java.iws
+.classpath
+.project
+.settings/
+bin/
