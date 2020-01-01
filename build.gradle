@@ -75,7 +75,7 @@ task sourcesJar(type: Jar) {
 apply plugin:'java'
 
 test{
-
+    //allways run tests
     dependsOn(cleanTest)
     useTestNG()
     // listen to events in the test execution lifecycle
