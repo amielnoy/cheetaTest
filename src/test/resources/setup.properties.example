@@ -1,5 +1,5 @@
 host = www.flickr.com
-apiKey=38e8f1f81442eba74b038c854f03d52d
+apiKey=c37a76b8f62103f28c5ea89d2a1354ee
 email = allancaplan
 username = I_am_Allan
 displayname = I_am_Allan
@@ -17,6 +17,8 @@ tokensecret = a1de85ea83124ef9
 galleryid = 72157629277637049
 photosetphotos = (comma separated list of ids of at least 3 photos that you own)
 
+auth_token=72157712471347416-48366596877f4b15
+api_sig=d0e9f64b33787f8cae187aa35488925d
 # id of a photo in your stream
 # which the tests can use to set, get and remove geo data
 # existing geo data will be destroyed!

@@ -39,8 +39,8 @@ public class Flickr4JavaTest {
 
             //setAuth(Permission.READ);
             apiKeyValue = testProperties.getApiKey();
-            authTokenValue = "72157712460982692-f4f7bc43d5aa2e4e";//"72157712448744562-4ca966ba6a51680e";
-            apiSigValue = "0ba9cce71bb8210feba65852b6b5971d";
+            authTokenValue = "72157712471347416-48366596877f4b15";
+            apiSigValue = "d0e9f64b33787f8cae187aa35488925d";
         } else {
             flickr = new FlickrStub();
         }

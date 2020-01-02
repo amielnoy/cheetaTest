@@ -80,12 +80,12 @@ public class UploaderTest extends Flickr4JavaTest {
     @Test(dataProvider = "textFileNameAsMethodName",dataProviderClass= textFileProvider.class)
     @Description("get the user uload status")
     public void getUploadStatusDataDrriven(String user,String testedItem) throws IOException, ParseException {
-        apiSigValue="946fbc88bd6330c529851e22b317bca3";;
-        String url = "https://www.flickr.com/services/rest/?method=flickr.people.getUploadStatus"
-                +"&api_key="
-                + apiKeyValue
-                +"&format=json&nojsoncallback=1&"
-                +"auth_token="
+        apiSigValue="95fd8005d60d1d59ac39c03fbdc3acb4";
+        String url="https://www.flickr.com/services/rest/?method=flickr.people.getUploadStatus&"
+                +"api_key="
+                +apiKeyValue
+                +"&format=json&nojsoncallback=1&"+
+                "auth_token="
                 +authTokenValue
                 +"&api_sig="
                 +apiSigValue;
@@ -111,7 +111,7 @@ public class UploaderTest extends Flickr4JavaTest {
 
     @Test(description="get the user uload status")
     public void getUploadStatus() throws IOException, ParseException {
-        apiSigValue="946fbc88bd6330c529851e22b317bca3";
+        apiSigValue="95fd8005d60d1d59ac39c03fbdc3acb4";
         String url_test="https://www.flickr.com/services/rest/?method=flickr.people.getUploadStatus&"
                 +"api_key="
                 +apiKeyValue//"38e8f1f81442eba74b038c854f03d52d"
@@ -132,15 +132,15 @@ public class UploaderTest extends Flickr4JavaTest {
 
     @Test
     public void getEcho() throws IOException, ParseException {
-        String url="https://www.flickr.com/services/rest/?method=flickr.test.echo"+
-                "&api_key="
-                +apiKeyValue
+        apiSigValue="5b45b1ecb3fa3abe32d8eb5aa8450035";
+        String urlTest="https://www.flickr.com/services/rest/?method=flickr.test.echo"
+                +"&api_key="+apiKeyValue
                 +"&format=json&nojsoncallback=1&"
                 +"auth_token="
                 +authTokenValue
                 +"&api_sig="
-                + apiSigValue;
-        String response = WebServicesKeywords.getHttpResponse(url);
+                +apiSigValue;
+        String response = WebServicesKeywords.getHttpResponse(urlTest);
 
         Assert.assertNotNull(response, "echo responce is null/empty!!");
         Assert.assertTrue(false==response.contains("\"stat\":\"fail\""));
